@@ -3,7 +3,9 @@
 using namespace std;
 
 int main(){
-      cout<<"Hello, World!"<<endl;
- 
+   char str[100];
+   cout<<"¬ведите"<<endl;
+   cin>>str;
+   cout<<"Hello, World"<<endl;
    return 0;
 }
