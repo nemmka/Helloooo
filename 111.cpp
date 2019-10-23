@@ -7,6 +7,14 @@ int main(){
    bool IsBreak=false;
    cout<<"Введите"<<endl;
    cin>>str;
-   cout<<"Hello, "<<str<<endl;
+   for (int i=0; str[i]!='\0'; i++)
+   if (str[i]<48 || str[i]>57) {
+      cout<<"Вы ввели не число"; 
+      IsBreak=true; 
+      break;
+   }
+   if(IsBreak==false){
+      cout<<"Hello, "<<str<<endl;
+   }
    return 0;
 }
