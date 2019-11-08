@@ -3,18 +3,10 @@
 using namespace std;
 
 int main(){
-   char str[100];
-   bool IsBreak=false;
-   cout<<"Ââåäèòå"<<endl;
-   cin>>str;
-   for (int i=0; str[i]!='\0'; i++)
-   if (str[i]<48 || str[i]>57) {
-      cout<<"Âû ââåëè íå ÷èñëî"; 
-      IsBreak=true; 
-      break;
-   }
-   if(IsBreak==false){
-      cout<<"Hello, "<<str<<"5"<<endl;
-   }
-   return 0;
+int str;
+cout«"Ââåäèòå ÷èñëî"«endl;
+cin»str;
+str=str+5;
+cout«str«endl;
+return 0;
 }
